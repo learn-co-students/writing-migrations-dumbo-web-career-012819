@@ -8,7 +8,7 @@
 
 ## Creating a table
 
-The first thing we will do is create a table. In `db/migrate/01_create_students.rb`, write the code to create a table with ActiveRecord. We've created a class for you called `CreateStudents`. 
+The first thing we will do is create a table. In `db/migrate/01_create_students.rb`, write the code to create a table with ActiveRecord. We've created a class for you called `CreateStudents`.
 
 Next, define a method called `change` and use the ActiveRecord `create_table` method within that method to create the table. The table should have a `:name` column with a type `string`.
 
@@ -26,7 +26,7 @@ Let's add a `:grade` column and a `:birthdate` column. The `:grade` column type 
 
 Imagine you're creating an incredible web app to send out a birthday greeting on each student's birthday. While building this, you realize you accidentally stored your birthdate data as a `string`. It would be much easier to work with if the column type was `datetime` instead. Let's fix that.
 
-Finally, we will change a column type, `string` to `datetime`. Same as before, you'll have to *create another migration file*. This time call it `03_change_datatype_for_birthdate.rb`. 
+Finally, we will change a column type, `string` to `datetime`. Same as before, you'll have to *create another migration file*. This time call it `03_change_datatype_for_birthdate.rb`.
 
 Again, same setup as before. Be sure to use the `change_column` method. It takes three necessary arguments: `change_column(table_name, column_name, type)`.
 
